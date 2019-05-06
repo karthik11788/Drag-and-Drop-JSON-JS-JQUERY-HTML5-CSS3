@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>java</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+  
+  <script>
+        x = [      {  name: "Karthik_S_Kumar",
+                      id:"drag1",
+                      more:"MORE INFORMATION",
+                      age: 22, 
+                      desi:"Front End Developer",
+                      city: "Trivandrum",
+                      url:"karthi.jpg",
+                      description:"Front-End Web Developer Job Description Template. A front-end web developer is responsible for implementing visual and interactive elements that users engage with through their web browser when using a web application.A back-end developer is a type of programmer who creates the logical back-end and core computational logic of a website, software or information system. The developer creates components and features that are indirectly accessed by a user through a front-end application or system." 
+                  }, 
+                  {  
+                       name: "Shince",
+                       id:"drag2",
+                       more:"MORE INFORMATION",
+                       desi:"Full Stack Developer",
+                       age: 22, 
+                       city: "Kottayam",
+                       url:"shince.jpg",
+                       description:"A Full Stack developer is responsible for front and back-end web development. Usually, good full stack developers will understand several how to work with several languages and databases including PHP, HTML, CSS, JavaScript and everything in between.A back-end developer is a type of programmer who creates the logical back-end and core computational logic of a website, software or information system. The developer creates components and features that are indirectly accessed by a user through a front-end application or system." 
+                     
+                      
+                   },
+                   {  
+                       name: "Kishore",
+                       id:"drag3",
+                      more:"MORE INFORMATION",
+                      desi:"UI/UX Developer",
+                       age: 30, 
+                       city: "Kannur",
+                       url:"kishor.jpg",
+                       description:"UX-UI Designers are generally responsible for collecting, researching, investigating and evaluating user requirements. Their responsibility is to deliver an outstanding user experience providing an exceptional and intuitive application design.A back-end developer is a type of programmer who creates the logical back-end and core computational logic of a website, software or information system. The developer creates components and features that are indirectly accessed by a user through a front-end application or system." 
+                   }
+                   ];
+        </script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+      
+     
+        
+        $( function() {
+            $( "#drag1" ).draggable();
+            $( "#drag2" ).draggable();
+            $( "#drag3" ).draggable();
+            $( "#drag4" ).draggable();
+            $( ".droppable123" ).droppable({
+                drop: function( event, ui )
+                 {
+                    if(ui.draggable[0].id == "drag1") {
+    
+                        age= x[0].age;
+                        desi=x[0].desi;
+                        mr=x[0].more;
+                        name=x[0].name;
+                        city=x[0].city;
+                        y=x[0].description;
+                    //#means target id .html(nme) input..
+                        $('#nam').html("NAME :"+name);
+                        $('#ag').html("AGE :" + age);
+                        $('#cty').html("CITY :"+city);
+                        $('#desc').html("DESCRIPTION :"+y);
+                        $('#test').html(mr);
+                        
+                        
+                    } else if(ui.draggable[0].id == "drag2") {
+                        age= x[1].age;
+                        desi=x[1].desi;
+                        mr=x[1].more;
+                        name=x[1].name;
+                        city=x[1].city;
+                        y=x[1].description;
+                        $('#nam').html("NAME :"+name);
+                        $('#ag').html("AGE :" + age);
+                        $('#cty').html("CITY :"+city);
+                        $('#desc').html("DESCRIPTION :"+y);
+                        $('#test').html(mr);
+                    }
+                    else if(ui.draggable[0].id == "drag3") {
+                        age= x[2].age;
+                        desi=x[2].desi;
+                        mr=x[2].more;
+                        name=x[2].name;
+                        city=x[2].city;
+                        y=x[2].description;
+                        
+                        $('#nam').html("NAME :"+name);
+                        $('#ag').html("AGE :" + age);
+                        $('#cty').html("CITY :"+city);
+                        $('#desc').html("DESCRIPTION :"+y);
+                        $('#test').html(mr);
+                    }
+                    else if(ui.draggable[0].id == "drag4") {
+                        age= x[3].age;
+                        desi=x[3].desi;
+                        mr=x[3].more;
+                        name=x[3].name;
+                        city=x[3].city;
+                        y=x[3].description;
+                        $('#nam').html("NAME :"+name);
+                        $('#ag').html("AGE :" + age);
+                        $('#cty').html("CITY :"+city);
+                        $('#desc').html("DESCRIPTION :"+y);
+                        $('#test').html(mr);
+                       
+                    }
+                    }
+                    });
+           
+                    } );
+ </script>
+
+</head>
+<body>
+
+  <!--leftside-->
+<div class="ff">
+  <div class="container">
+    <div class="row">
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+              
+
+                <div id='draggable-items-wrap'>
+
+
+                      
+                </div>
+
+                     <script>
+                    var child='';
+                    var j =x.length;
+                    for(i=0;i<j;i++)
+                    {
+                        child = '<div class="lefts" id="'+x[i].id+'"><div class="element">'+
+                    '<b>Name:</b><h1 class="title" id="titl"> '+ x[i].name+'</h1>'+
+                    '<b class="bolder">Designation:</b> <p id="tita">'+x[i].desi +'</p></div>'+
+                    '  <img src='+x[i].url+' alt="karthik"></div></div>';
+
+                    $('#draggable-items-wrap').append(child);
+                    }
+                     </script>
+                     </div>
+
+<!--lefts end-->
+
+
+       <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="rights droppable123" id="droppable" >
+                  
+                    <div class="order">
+                        <div class="name" id="nam"></div>
+                        <div class="age" id="ag"></div>
+                        <hr>
+                        <div class="description" id="desc"></div>
+                        <hr>
+                        <div class="city" id="cty"></div></div>
+                    <div class="text" id="test">
+                            
+                    <h1>DROP HERE</h1>
+                    <p>To See More Information..</p></div>
+
+
+                   </div>
+                   </div>  
+                   </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.lefts img{
+    width: 17%;
+    position: relative;
+    top: -113px;
+    padding: 5px;
+    border-radius: 25%;
+
+}
+.lefts h1{
+    position: relative;
+    left: 116px;
+    top: -5px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.lefts p{
+    position: relative;
+    left: 158px;
+    top: -27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.lefts{
+    border: 1px solid;
+    padding: 16px;
+    margin: 10px;
+    cursor: pointer;
+    height: 110px;
+    width: 350px;
+    background-color: #D3D3D3;
+    border-style: none;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px #1f2e3acc;}
+    .lefts:hover{
+        background-color: #2F4F4F;
+        box-shadow: 2px 2px 5px #FC6B02;
+        color:white;
+    }
+    .leftbg{
+        background-color: #778899;
+    }
+
+    .text{
+        color: azure;
+        position: absolute;
+        text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    top: 120px;
+    }
+
+    .rights{
+        height: 31em;
+        background-color: #2F4F4F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px dashed;
+        
+       
+    }
+    .ff{
+        background-color: #A9A9A9;
+    }
+    .order{
+        position: relative;
+    background-color: #2F4F4F;
+    padding: 20px 19px;
+    top: 53px;
+
+    color: white;
+    }
+
+    #nam{
+        line-height: 2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    #ag{
+        line-height: 2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+
+    #cty{
+        line-height: 2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    #desc{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+    }
+    b
+        {
+            position: relative;
+            left: 60px;
+            top: 17px;
+        }
+    .bolder{
+        position: relative;
+        top: -5px;
+    }
+
+    .smallDiv {
+        border: 1px solid grey;
+        margin-bottom: 5px;
+        min-height: 3px;
+    }
